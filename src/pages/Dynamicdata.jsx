@@ -13,7 +13,7 @@ function Dynamicdata() {
 
     const { userdata, loading } = useContext(UserContext);
 
-    const user = userdata.find((uu) => uu.id == id);
+    const user = userdata.find((uu) => uu.id === Number(id));
 
     const count = useSelector(store => store.counter.value);
     const dispatch = useDispatch();

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function About(){
 
     const refresh = useDispatch();
-    const {users,loading} = useSelector(state => state.users);
+    const {users} = useSelector(state => state.users);
 
     useEffect(()=>{
         refresh(fetchUserdata());

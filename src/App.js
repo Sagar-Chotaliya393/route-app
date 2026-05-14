@@ -7,7 +7,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useContext, memo } from "react";
 import UserContext from "./context/UserContext";
-import AppContext, { AppProvider } from "./context/AppContext";
+import AppContext from "./context/AppContext";
 import Login from "./pages/login_design";
 
 const Otherpage = memo(() => {
